@@ -1,0 +1,36 @@
+/* src/Home.css */
+.logo {
+  opacity: 0; /* Initial opacity is set to 0 for the fade-in effect */
+  transition: opacity 1s ease-in-out; /* Transition the opacity over 1 second */
+}
+
+.logo.visible {
+  opacity: 1; /* Set opacity to 1 for the fade-in effect */
+}
+
+nav a {
+  text-decoration: none;
+  color: #022076;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Add a smooth transition effect on color change */
+}
+
+nav a:hover {
+  color: #78CB33; /* Change the color to the desired highlight color on hover */
+}
+
+.skyloo {	
+	
+  /* Add the animation properties */
+  animation: spin 4s infinite cubic-bezier(1,0.9,0.6,0.8);
+}
+
+/* Define the keyframes for the spin animation */
+@keyframes spin {
+  0%,100% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+}
